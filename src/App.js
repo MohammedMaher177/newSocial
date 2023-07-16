@@ -11,6 +11,8 @@ import Login from './Components/Login/Login.jsx';
 import Register from './Components/Register/Register.jsx';
 import { Provider } from 'react-redux';
 import store from './Redux/Store.js';
+import Profile from './Components/Profile/Profile.jsx';
+import PostWithComments from './Components/Posts/PostWithComments.jsx';
 
 
 
@@ -27,6 +29,8 @@ const router = createBrowserRouter([
       { path: "movies", element: <Movies />, },
       { path: "login", element: <Login />, },
       { path: "signup", element: <Register />, },
+      { path: "users/search/:id", element: <Profile />, },
+      { path: "posts/search/:id", element: <PostWithComments />, },
       { path: "*", element: <NotFound />, },
     ],
   },
